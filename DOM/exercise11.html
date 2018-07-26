@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Random Image</title>
+</head>
+<body>
+    <button onclick="image()"  id="submit">show image</button>
+    
+    
+    
+    <script>
+        function image()
+        {
+            var x = Math.floor((Math.random() * 3) + 1);
+            if(x==1)
+            {
+                var x=document.createElement("img");
+                x.setAttribute("src","http://farm4.staticflickr.com/3691/11268502654_f28f05966c_m.jpg")
+                x.setAttribute("width", "240");
+                x.setAttribute("height", "160");
+                document.body.appendChild(x);
+            }
+            else if(x==2)
+            {
+                var x=document.createElement("img");
+                x.setAttribute("src","http://farm1.staticflickr.com/33/45336904_1aef569b30_n.jpg")
+                x.setAttribute("width", "320");
+                x.setAttribute("height", "195");
+                document.body.appendChild(x);
+            }
+            else{
+                var x=document.createElement("img");
+                x.setAttribute("src","http://farm6.staticflickr.com/5211/5384592886_80a512e2c9.jpg")
+                x.setAttribute("width", "500");
+                x.setAttribute("height", "343");
+                document.body.appendChild(x);
+            }
+        }
+    </script>
+
+</body>
+</html>

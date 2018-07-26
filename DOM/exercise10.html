@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>
+    Volume
+</title>
+</head>
+<body>
+    <p>Input radius and volume of sphere</p>
+    <form method="POST" id="my_form">
+        Radius
+        <br>
+        <input type="number" id="radius" required>
+        <br>
+        Volume
+        <br>
+        <input type="number" id="volume" required>
+        <br>
+        <input type="submit" value="calculate" id="submit" onclick="cal_volume()">
+    </form>
+    <script>
+        function cal_volume()
+        {
+        var rad=document.getElementById("radius").value;
+        var vol=(4/3)*Math.PI*Math.pow(rad,3);
+        vol=vol.toFixed(5);
+        document.getElementById("volume").value=vol;
+        }
+    </script>
+</body>
+</html>
